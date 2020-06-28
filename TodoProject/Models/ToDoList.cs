@@ -22,7 +22,12 @@ namespace TodoProject.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime DateCreated { get; set; }
 
+        [Required]
+        [ForeignKey("ApplicationUser")]
+        public string UserId { get; set; }
+
         //Naviagation property - helps entity frameworl build db
         public virtual IEnumerable<TodoItem> ToDoItems { get; set; }
+        public virtual ApplicationUser ApplicationUser { get; set; }
     }
 }
