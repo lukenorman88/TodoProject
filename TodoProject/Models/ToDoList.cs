@@ -27,7 +27,7 @@ namespace TodoProject.Models
         public string UserId { get; set; }
 
         //Naviagation property - helps entity frameworl build db
-        public virtual IEnumerable<TodoItem> ToDoItems { get; set; }
+        public virtual IEnumerable<ToDoItem> ToDoItems { get; set; }
         public virtual ApplicationUser ApplicationUser { get; set; }
     }
 }

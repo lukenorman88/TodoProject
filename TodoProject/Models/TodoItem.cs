@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TodoProject.Models
 {
-    public class TodoItem
+    public class ToDoItem
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
